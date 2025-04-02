@@ -1,91 +1,96 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(#96aeed, #2929f3);
+    font-family: Arial, sans-serif;/* Utilisez une police sans-serif pour une meilleure lisibilité */
+    margin: 0;/* Supprimez les marges par défaut */
+    padding: 0;/* Supprimez les espacements par défaut */
+    background-image: linear-gradient(#041747, #1010f8);/* Ajoutez un arrière-plan en dégradé */
+    color: white;/* Définissez la couleur du texte en blanc pour un meilleur contraste */
 }
 
 header {
-    color: black;
-    padding: 1em;
-    text-align: center;
+    padding: 1em;/* Ajoutez de l'espace au-dessus et en dessous de l'en-tête */
+    text-align: center;/* Alignez le texte de l'en-tête au centre */
 }
 
 section {
-    display: -webkit-flex;
-    display: flex;
+    display: -webkit-flex;/* Safari */
+    display: flex;/* Navigateur non-Safari */
 }
 
 nav {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    width: max-content;
-    background-color: #f1f1f117;
-    padding: 10px;
+    -webkit-box-flex: 1;/* Safari */
+    -ms-flex: 1;/* IE 10 */
+    flex: 1;/* Navigateur non-Safari */
+    width: max-content;/* Définissez la largeur selon le contenu */
+    background-color: #f1f1f117;/* Ajoutez une couleur d'arrière-plan semi-transparente */
+    padding: 10px;/* Ajoutez de l'espace intérieur à la navigation */
 }
 
 nav ul li {
-    display: flex;
+    display: flex;/* Alignez les éléments sur une seule ligne */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white;/* Définissez la couleur des liens en blanc */
+    text-decoration: none;/* Supprimez le soulignement des liens */
 }
 
 nav ul li a.active {
-    color: rgb(174, 217, 241);
+    color: rgb(174, 217, 241);/* Définissez la couleur du lien actif avec une teinte plus claire */
 }
 
 article {
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    width: 80%;
-    padding: 10px;
+    -webkit-box-flex: 3;/* Safari */
+    -ms-flex: 3;/* IE 10 */
+    flex: 3;/* Navigateur non-Safari */
+    width: 80%;/* Définissez la largeur à 80 % du conteneur */
+    padding: 10px;/* Ajoutez de l'espace intérieur à l'article */
 }
 
 section::after {
-    content: "";
-    display: table;
-    clear: both;
+    content: "";/* Clearfix pour flexbox */
+    display: table;/* Clearfix pour flexbox */
+    clear: both;/* Clearfix pour flexbox */
 }
 
 footer {
-    color: #ffffff;
-    text-align: center;
-    padding: 1em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    color: #ffffff;/* Définissez la couleur du texte du pied de page en blanc */
+    text-align: center;/* Alignez le texte du pied de page au centre */
+    padding: 1em;/* Ajoutez de l'espace au pied de page */
+    position: relative;/* Positionnez le pied de page par rapport à la page */
+    bottom: 0;/* Placez le pied de page en bas de la page */
+    width: 100%;/* Définissez la largeur du pied de page à 100 % */
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%;/* Rendez les images responsives */
 }
 
 table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
+    width: 80%;/* Définissez la largeur du tableau à 80 % du conteneur */
+    margin: 20px auto;/* Alignez le tableau au centre */
+    border-collapse: collapse;/* Fusionnez les bordures des cellules du tableau */
 }
+
 caption {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.5em;/* Définissez la taille de la police de la légende */
+    font-weight: bold;/* Définissez le poids de la police de la légende */
+    margin-bottom: 10px;/* Ajoutez un espace en-dessous de la légende */
 }
+
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    border: 1px solid #ddd;/* Ajoutez une bordure aux cellules du tableau */
+    padding: 8px;/* Ajoutez de l'espace intérieur aux cellules du tableau */
+    text-align: left;/* Alignez le texte à gauche dans les cellules du tableau */
 }
+
 th {
-    background-color: #f2f2f2;
+    background-color: #f2f2f22f;/* Ajoutez une couleur d'arrière-plan semi-transparente aux en-têtes du tableau */
 }
+
 tr:nth-child(even) {
-    background-color: #f2f2f285;
+    background-color: #f2f2f22f;/* Ajoutez une couleur d'arrière-plan semi-transparente aux lignes paires */
 }
+
 tr:hover {
-    background-color: #ddd;
+    background-color: #ddd;/* Changez la couleur de l'arrière-plan au survol */
 }
